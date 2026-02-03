@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP Rocket | Simple Remove Query Strings
- *  Author: vutruso
+ * Author: vutruso
  * Author URI: https://vutruso.com
  * Description: Removes ?ver= from all CSS/JS files when using WP Rocket
  */
@@ -35,3 +35,4 @@ function regenerate_rocket_config() {
 register_activation_hook( __FILE__, __NAMESPACE__ . '\regenerate_rocket_config' );
 
 register_deactivation_hook( __FILE__, __NAMESPACE__ . '\regenerate_rocket_config' );
+
